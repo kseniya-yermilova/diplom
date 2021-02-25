@@ -182,4 +182,5 @@ javadoc/
 cwallet.sso.lck
 
 .idea/**
+.target/**
 *.iml
