@@ -28,4 +28,17 @@ public class MainPage {
                 moveToElement(hotelButton).click(hotelButton).build().perform();
         return new RegistrationHotelPage(driver);
     }
+
+    @FindBy(xpath = "//span[text()='View']")
+    private WebElement viewButton;
+
+    @FindBy(xpath = "//span[text()='Hotels']")
+    private WebElement hotelsButton;
+
+    public HotelListPage openViewHotelsPage(){
+        Actions action = new Actions(driver);
+        action.moveToElement(articleButton).moveToElement(viewButton).
+                moveToElement(hotelsButton).click(hotelsButton).build().perform();
+        return new HotelListPage(driver);
+    }
 }
