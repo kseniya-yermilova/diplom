@@ -55,9 +55,6 @@ public class RegistrationHotelPage {
     @FindBy(xpath = "//label[@id='add_hotel:j_idt52']")
     public WebElement cityLabel;
 
-    @FindBy(xpath = "//*[@id='add_hotel:city_panel']/div/ul/li[3]")
-    public WebElement cityLosAngeles;
-
     @FindBy(xpath = "//input[@id='add_hotel:short_description']")
     public WebElement shortDescriptionField;
 
@@ -78,9 +75,6 @@ public class RegistrationHotelPage {
 
     @FindBy(xpath = "//label[@id='add_hotel:j_idt60']")
     public WebElement notesLabel;
-
-//    @FindBy(xpath = "//*[@id='add_hotel:country_panel']/div")
-//    public WebElement country;
 
     @FindBy(xpath = "//*[@id='add_hotel:country']/div[3]/span")
     public WebElement countryDropdownCorner;

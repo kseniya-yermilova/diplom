@@ -18,19 +18,7 @@ public class BaseTest {
         driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
         driver.navigate().to("http://localhost:8080/article/faces/welcome.xhtml");
     }
- /*   @Parameters("browser")
-    public static void setup(String browser){
-        if (browser.equalsIgnoreCase("chrome")){
-            WebDriverManager.chromedriver().setup();
-            driver=new ChromeDriver();
-        } else if(browser.equalsIgnoreCase("edge")){
-            WebDriverManager.edgedriver().setup();
-            driver=new EdgeDriver();
-        } else if(browser.equalsIgnoreCase("firefox")){
-            WebDriverManager.firefoxdriver().setup();
-            driver=new FirefoxDriver();
-        }
-    }*/
+
     @AfterClass
     public void teardown(){
         try {
