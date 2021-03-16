@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="Cross Browser Test for Hotel Registration">
+    <test name="ChromeTest">
+        <parameter name="browser" value="chrome"/>
+        <classes>
+            <class name = "net.hotel.test.RegistrationHotelPageTest"/>
+        </classes>
+    </test>
+    <test name="FirefoxTest">
+        <parameter name="browser" value="firefox"/>
+        <classes>
+            <class name = "net.hotel.test.RegistrationHotelPageTest"/>
+        </classes>
+    </test>
+</suite>
